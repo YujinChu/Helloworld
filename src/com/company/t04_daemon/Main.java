@@ -14,7 +14,7 @@ public class Main {
         }
 
         DeamonThread t = new DeamonThread();
-        t.setDaemon(true);
+        t.setDaemon(true);;;;
         t.start();
     }
 }

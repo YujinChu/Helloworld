@@ -3,6 +3,7 @@ package com.company.t01_thread;
 /**
  * Created by Mirim on 2015-08-25.
  */
+
 public class MyThread {
     public static void main(String[] args){
         class SampleThread extends Thread{
@@ -12,7 +13,6 @@ public class MyThread {
         }
 
         class SampleRunnable implements Runnable{
-
             @Override
             public void run() {
                 System.out.println("SampleRunnable");

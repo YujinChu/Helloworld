@@ -3,7 +3,7 @@ package com.company.t04_daemon;
 public class Main {
 
     public static void main(String[] args) {
-        class DeamonThread extends Thread{
+        class DaemonThread extends Thread{
             public void run(){
                 try {
                     sleep(Long.MAX_VALUE);
@@ -13,7 +13,7 @@ public class Main {
             }
         }
 
-        DeamonThread t = new DeamonThread();
+        DaemonThread t = new DeamonThread();
         t.setDaemon(true);
         t.start();
     }

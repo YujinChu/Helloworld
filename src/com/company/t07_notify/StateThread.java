@@ -11,25 +11,17 @@ public class StateThread extends Thread {
     }
 
     public void run(){
-        private Object monitor;
-
-        public StateThread(Object monitor){
-            this.monitor = monitor;
+        for(int i=0; i<10000; i++) {
+            String a = "a";
         }
-
-        public void run(){
-            for(int i=0; i<10000; i++) {
-                String a = "a";
+        synchronized (monitor){
+            try {
+                monitor.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-            synchronized (monitor){
-                try {
-                    monitor.wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                System.out.println(getName()+"is notified");
+            System.out.println(getName()+"is notified");
 
-            }
         }
     }
 }

@@ -6,12 +6,12 @@ package com.company.t05_sychronized;
 public class MyThread extends Thread {
     private Calculate calc;
 
-    public MyThread(Calculate calc){
+    public MyThread(Calculate calc) {
         this.calc = calc;
     }
 
-    public void run(){
-        for(int i=0; i<10000; i++){
+    public void run() {
+        for (int i = 0; i < 10000; i++) {
             calc.plus(1);
         }
     }

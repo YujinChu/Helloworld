@@ -5,23 +5,25 @@ package com.company.t05_sychronized;
  */
 public class Calculate {
     private int amount;
-    public Calculate(){
+
+    public Calculate() {
         amount = 0;
     }
 
     private Object lock = new Object();
+
     //public synchronized void plus(int value){
-    public void plus(int value){
+    public void plus(int value) {
         synchronized (lock) {
             amount += value;
         }
     }
 
-    public void minus(int value){
+    public void minus(int value) {
         amount -= value;
     }
 
-    public int getAmount(){
+    public int getAmount() {
         return amount;
     }
 

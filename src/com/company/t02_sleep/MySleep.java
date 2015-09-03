@@ -5,9 +5,9 @@ package com.company.t02_sleep;
  */
 public class MySleep {
     public static void main(String[] args) {
-        class MyThread extends Thread{
-            public void run(){
-                while(true) {
+        class MyThread extends Thread {
+            public void run() {
+                while (true) {
                     try {
                         System.out.println("Before sleep");
                         sleep(1000);

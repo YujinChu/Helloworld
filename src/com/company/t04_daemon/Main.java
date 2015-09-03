@@ -3,8 +3,8 @@ package com.company.t04_daemon;
 public class Main {
 
     public static void main(String[] args) {
-        class DeamonThread extends Thread{
-            public void run(){
+        class DeamonThread extends Thread {
+            public void run() {
                 try {
                     sleep(Long.MAX_VALUE);
                 } catch (InterruptedException e) {

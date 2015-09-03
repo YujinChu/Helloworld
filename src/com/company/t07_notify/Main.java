@@ -10,7 +10,7 @@ public class Main {
         Object monitor = new Object();
         StateThread thread = new StateThread(monitor);
 
-        System.out.println("thread state="+thread.getState());
+        System.out.println("thread state=" + thread.getState());
         thread.start();
         System.out.println(
                 "thread state(after start)=" + thread.getState());
@@ -22,9 +22,9 @@ public class Main {
         }
 
         System.out.println(
-                "thread state(0.1sec)="+thread.getState());
+                "thread state(0.1sec)=" + thread.getState());
 
-        synchronized (monitor){
+        synchronized (monitor) {
             monitor.notify();
         }
     }

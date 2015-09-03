@@ -1,7 +1,5 @@
 package com.company.t05_sychronized;
 
-
-
 public class Main {
     //calc value : 14649
     public static void main(String[] args) {
@@ -20,6 +18,6 @@ public class Main {
             e.printStackTrace();
         }
 
-        System.out.print("calc value : "+calc.getAmount());
+        System.out.print("calc value : " + calc.getAmount());
     }
 }

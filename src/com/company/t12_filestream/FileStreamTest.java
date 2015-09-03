@@ -9,8 +9,8 @@ import java.io.IOException;
  */
 public class FileStreamTest {
     public static void main(String[] args) {
-
         FileInputStream fis = null;
+
         try {
             fis = new FileInputStream("C:\\Temp\\Slog.log");
             int i = 0;

@@ -7,7 +7,7 @@ import java.io.FileOutputStream;
  * Created by Mirim on 2015-09-03.
  */
 public class DataInputStreamTest {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         FileOutputStream fos = null;
         DataOutputStream dos = null;
 
@@ -19,16 +19,15 @@ public class DataInputStreamTest {
             dos.writeInt(100);
             dos.writeDouble(200.5);
             dos.writeUTF("hello world");
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 fos.close();
                 dos.close();
-            }catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
-
     }
 }

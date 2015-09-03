@@ -6,21 +6,22 @@ package com.company.t07_notify;
 public class StateThread extends Thread {
     private Object monitor;
 
-    public StateThread(Object monitor){
+    public StateThread(Object monitor) {
         this.monitor = monitor;
     }
 
-    public void run(){
-        for(int i=0; i<10000; i++) {
+    public void run() {
+        for (int i = 0; i < 10000; i++) {
             String a = "a";
         }
-        synchronized (monitor){
+
+        synchronized (monitor) {
             try {
                 monitor.wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println(getName()+"is notified");
+            System.out.println(getName() + "is notified");
 
         }
     }

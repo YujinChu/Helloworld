@@ -7,12 +7,12 @@ package com.company.t06_interrupt;
 public class SleepThread extends Thread {
     long sleepTime;
 
-    public SleepThread(long sleepTime){
+    public SleepThread(long sleepTime) {
         this.sleepTime = sleepTime;
     }
 
-    public void run(){
-        System.out.println("Sleeping "+getName());
+    public void run() {
+        System.out.println("Sleeping " + getName());
         try {
             Thread.sleep(sleepTime);
         } catch (InterruptedException e) {

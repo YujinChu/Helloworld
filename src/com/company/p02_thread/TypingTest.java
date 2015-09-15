@@ -8,6 +8,7 @@ import java.util.Scanner;
  * Created by Mirim on 2015-09-15.
  */
 public class TypingTest {
+    //dsaf
 
     public static void main(String[] args){
         String[] data = {"If", "two", "instances" ,"of", "Random"};// are created with the same seed, and the same sequence of method calls is made for each, they will generate and return identical sequences of numbers. In order to guarantee this property, particular algorithms are specified for the class Random. Java implementations must use all the algorithms shown here for the class Random, for the sake of absolute portability of Java code. However, subclasses of class Random are permitted to use other algorithms, so long as they adhere to the general contracts for all the methods}
